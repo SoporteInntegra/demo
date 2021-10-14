@@ -1,9 +1,26 @@
 var toastTrigger = document.getElementById('liveToastBtn')
 var toastLiveExample = document.getElementById('liveToast')
+var messagesend = document.getElementById('messagesuccess')
+var messagebutton = document.getElementById('messagebutton')
+
+if(message){
+
+}else{
+    toastLiveExample.addEventListener('hidden.bs.toast', function () {
+        messagebutton.classList.remove("d-none")
+    })
+}
+
+
+messagesend.addEventListener('hidden.bs.toast', function () {
+    messagebutton.classList.remove("d-none")
+})
+
 if (toastTrigger) {
     toastTrigger.addEventListener('click', function () {
         var toast = new bootstrap.Toast(toastLiveExample)
         toast.show()
+        messagebutton.classList.add("d-none")
     })
 }
 
@@ -22,8 +39,13 @@ async function handleSubmit(event) {
         'Accept': 'application/json'
     }
   }).then(response => {
-    status.innerHTML = "Message send success!";
+    //status.innerHTML = "Message send success!";
     form.reset()
+    var myToast = bootstrap.Toast.getInstance(toastLiveExample)
+    myToast.hide()
+    var message = new bootstrap.Toast(messagesend)
+    message.show()
+    messagebutton.classList.add("d-none")
   }).catch(error => {
     status.innerHTML = "Oops! There was a problem submitting your form"
   });

@@ -37,7 +37,6 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn-warning float-end my-3 rounded-pill" id="liveToastBtn">Contact Me</button>
             </div>
         </div>
     </div>
@@ -116,6 +115,11 @@
             </div>
         </div>
     </div>
+    <div class="container my-5">
+        <div class="text-center p-5">
+            <button class="btn btn-lg btn-warning rounded-pill px-5" style="min-height: 100px;">SEND ME A MESSAGE</button>
+        </div>
+    </div>
     <footer class="gray pt-5 mt-5">
         <div class="container my-5">
             <div class="row">
@@ -146,14 +150,26 @@
             demo.github.com
         </div>
     </footer>
+    <!--HIDDE-->
+    <div id="messagebutton" class="rounded-circle position-fixed bottom-0 end-0 m-5">
+        <a class="pe-auto" href="javascript:;"><img id="liveToastBtn" src="http://via.placeholder.com/90x90" class="img-fluid rounded-circle" alt=""></a>
+    </div>
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="messagesuccess" class="toast align-items-center text-white bg-success border-0 mb-3" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    Message send succefully...
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
         <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
             <div class="toast-header">
                 <img src="http://via.placeholder.com/25x25" class="rounded me-2" alt="...">
                 <strong class="me-auto">Sendme a mail</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
-            <div class="toast-body p-4">
+            <div class="toast-body px-4 bg-white rounded">
                 <form id="my-form" action="https://formspree.io/f/mleakede" method="POST">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email</label>
@@ -163,12 +179,13 @@
                         <label for="exampleFormControlTextarea1" class="form-label">Message</label>
                         <textarea type="text" name="message" class="form-control form-control-lg" id="message" rows="3"></textarea>
                     </div>
-                    <button id="my-form-button" type="submit" class="btn btn-lg btn-danger w-100">Send message</button>
+                    <button id="my-form-button" type="submit" class="btn btn-lg btn-danger w-100 rounded-pill">Send message</button>
                     <p id="my-form-status"></p>
                 </form>
             </div>
         </div>
     </div>
+    
     <ul class="circles">
         <li></li>
         <li></li>
