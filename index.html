@@ -76,11 +76,13 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-8 p-5 gray rounded-big text-gray animate__animated animate__fadeIn">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, explicabo aperiam. Beatae doloremque sit culpa tempora, fugiat delectus facilis, blanditiis necessitatibus aliquid eos nihil, quia voluptatibus itaque eaque qui nemo!
-                <br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae similique quaerat nisi sit porro reiciendis vitae suscipit quam aut? Nemo, saepe! Rem sunt expedita eos fugiat recusandae, ad nobis quae.
-            </div>
+            <div class="col-lg-8 p-4">
+                <div class="p-lg-5 p-4 gray rounded-big text-gray animate__animated animate__fadeIn">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, explicabo aperiam. Beatae doloremque sit culpa tempora, fugiat delectus facilis, blanditiis necessitatibus aliquid eos nihil, quia voluptatibus itaque eaque qui nemo!
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae similique quaerat nisi sit porro reiciendis vitae suscipit quam aut? Nemo, saepe! Rem sunt expedita eos fugiat recusandae, ad nobis quae.
+                </div>
+               </div>
         </div>
     </div>
     <div class="container p-5">
@@ -89,7 +91,7 @@
             <div class="col-lg-6 p-5">
                 <img src="http://via.placeholder.com/720x720" class="img-fluid rounded" alt="">
             </div>
-            <div class="col-lg-6 p-5 d-flex align-items-center justify-content-center">
+            <div class="col-lg-6 p-lg-5 d-flex align-items-center justify-content-center">
                 <div class="p-5">
                     <h4>Title text <span class="badge bg-secondary">2018</span></h4>
                     <p>
@@ -104,7 +106,7 @@
             <div class="col-lg-6 p-5">
                 <img src="http://via.placeholder.com/720x720" class="img-fluid rounded" alt="">
             </div>
-            <div class="col-lg-6 p-5 d-flex align-items-center justify-content-center">
+            <div class="col-lg-6 p-lg-5 d-flex align-items-center justify-content-center">
                 <div class="p-5">
                     <h4>Title text <span class="badge bg-secondary">2018</span></h4>
                     <p>
@@ -117,7 +119,7 @@
     </div>
     <div class="container my-5">
         <div class="text-center p-5">
-            <button class="btn btn-lg btn-warning rounded-pill px-5" style="min-height: 100px;">SEND ME A MESSAGE</button>
+            <button onclick="clickemail()" class="btn btn-lg btn-warning rounded-pill px-5" style="min-height: 100px;">SEND ME A MESSAGE</button>
         </div>
     </div>
     <footer class="gray pt-5 mt-5">
@@ -152,7 +154,7 @@
     </footer>
     <!--HIDDE-->
     <div id="messagebutton" class="rounded-circle position-fixed bottom-0 end-0 m-5">
-        <a class="pe-auto" href="javascript:;"><img id="liveToastBtn" src="http://via.placeholder.com/90x90" class="img-fluid rounded-circle" alt=""></a>
+        <a id="liveToastBtn" href="javascript:;"><img src="http://via.placeholder.com/90x90" class="img-fluid rounded-circle" alt=""></a>
     </div>
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
         <div id="messagesuccess" class="toast align-items-center text-white bg-success border-0 mb-3" role="alert" aria-live="assertive" aria-atomic="true">
@@ -185,7 +187,6 @@
             </div>
         </div>
     </div>
-    
     <ul class="circles">
         <li></li>
         <li></li>

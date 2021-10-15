@@ -3,14 +3,9 @@ var toastLiveExample = document.getElementById('liveToast')
 var messagesend = document.getElementById('messagesuccess')
 var messagebutton = document.getElementById('messagebutton')
 
-if(message){
-
-}else{
-    toastLiveExample.addEventListener('hidden.bs.toast', function () {
-        messagebutton.classList.remove("d-none")
-    })
+function clickemail(){
+    document.getElementById('liveToastBtn').click();
 }
-
 
 messagesend.addEventListener('hidden.bs.toast', function () {
     messagebutton.classList.remove("d-none")
@@ -20,7 +15,6 @@ if (toastTrigger) {
     toastTrigger.addEventListener('click', function () {
         var toast = new bootstrap.Toast(toastLiveExample)
         toast.show()
-        messagebutton.classList.add("d-none")
     })
 }
 
