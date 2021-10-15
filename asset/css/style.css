@@ -258,3 +258,20 @@ h3{
         }
 
     }
+
+    /*RESPOSIVE*/
+    @media (max-width: 575.98px) { 
+        .logo img{
+            width: 100px!important;
+        }
+        .main-header{
+            min-height: 90px!important;
+        }
+        .header-left {
+            min-height: 90px!important;
+            
+        }
+        .main-header h1 {
+            font-size: 30px;
+        }
+    }
