@@ -5,15 +5,31 @@ body{
     color:lightslategrey ;
     position: relative;
 }
+img:hover{
+    transition: all .1s ease-in-out;
+    transform: scale(.9);
+}
+.toast{
+    max-width: 280px;
+}
 .gray{
     background-color: rgb(19, 19, 19);
     font-family: 'Exo', sans-serif;
 }
 .orange{
-    background-color: orange;
+    background-color: #F39200!important;
 }
 .text-orange{
-    color: orange;
+    color: #F39200!important;
+}
+.btn-warning {
+    background-color: #F39200!important;
+}
+.bg-warning{
+    background-color: #F39200!important;
+}
+.text-warning{
+    color: #F39200!important;
 }
 .logo {
     position: absolute;
@@ -29,7 +45,7 @@ body{
     left: -835px;
     top: 100px;
     background-color: #000000;
-    border: 1px solid orange;
+    border: 1px solid #F39200!important;
     border-top-style:dashed;
     transform: skewY(-45deg);
 }
@@ -39,7 +55,7 @@ body{
     width: 1500px;
     left: -850px;
     background-color: #000000;
-    border: 1px solid orange;
+    border: 1px solid #F39200!important;
     border-bottom-style:dashed;
     transform: skewY(-45deg);
 }
@@ -117,7 +133,7 @@ h3{
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: orange; 
+    background: #F39200!important; 
     border-radius: 10px;
   }
   
