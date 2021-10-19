@@ -4,222 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Demo-Front</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-4">
-                <div class="orange header-left">
-
-                </div>
-                <div class="logo">
-                    <img src="http://via.placeholder.com/150x150" alt="">
-                </div>
-                <div class="position-relative d-none d-lg-block">
-                    <div class="second-diagonal">
-                        asdasd
-                    </div>
-                    <div class="big-diagonal">
-                        asdasd
-                    </div>
-                </div>
-            </div>
-            <div class="col-8">
-                <div class="orange main-header d-flex align-items-center justify-content-center">
-                    <div class="position-relative">
-                        <h1 class="animate__animated animate__fadeInLeft title">A WEB SITE</h1>
-                        <div class="hello-world">
-                            >Hello world
-                        </div>
+    <div class="custom-nav">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+            </nav>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-12 offset-lg-4 text-center">
-                <div class="row">
-                    <div class="col-4 animate__animated animate__fadeIn">
-                        <img src="asset/img/icons_web.svg" width="150px" class="img-fluid rounded-circle" alt="">
-                        <p class="py-3">
-                            Lorem ipsum dolor sit amet
-                        </p>
-                    </div>
-                    <div class="col-4 animate__animated animate__fadeIn animate__delay-1s">
-                        <img src="asset/img/icons_shop.svg" width="150px" class="img-fluid rounded-circle" alt="">
-                        <p class="py-3">
-                            Lorem ipsum dolor sit amet
-                        </p>
-                    </div>
-                    <div class="col-4 animate__animated animate__fadeIn animate__delay-2s">
-                        <img src="asset/img/icons_mobile.svg" width="150px" class="img-fluid rounded-circle" alt="">
-                        <p class="py-3">
-                            Lorem ipsum dolor sit amet
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <div class="container position-relative gameframe my-5">
+        <div class="collision">
+            <div class="hitObj"></div>
+            <div class="hitObj"></div>
+            <div class="hitObj"></div>
+            <div class="hitObj"></div>
         </div>
+        <div id="player"></div>
     </div>
-    <div class="container my-5">
-        <div class="row p-4">
-            <div class="col-lg-4">
-                <div class="p-5">
-                    <h3 class="text-gray animate__animated animate__fadeIn">DETAILS</h3>
-                    <p class="animate__animated animate__fadeIn">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente consequatur perferendis aliquam porro, consequuntur reprehenderit aperiam tempora fugiat dolorum, incidunt facere facilis. Culpa perspiciatis officia beatae, impedit est nam quaerat.
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-8 p-4">
-                <div class="p-lg-5 p-4 gray rounded-big text-gray animate__animated animate__fadeIn">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, explicabo aperiam. Beatae doloremque sit culpa tempora, fugiat delectus facilis, blanditiis necessitatibus aliquid eos nihil, quia voluptatibus itaque eaque qui nemo!
-                    <br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae similique quaerat nisi sit porro reiciendis vitae suscipit quam aut? Nemo, saepe! Rem sunt expedita eos fugiat recusandae, ad nobis quae.
-                </div>
-               </div>
-        </div>
-    </div>
-    <div class="container p-5 details">
-        <h3 class="text-center text-gray">DETAILS</h3>
-        <div class="row">
-            <div class="col-lg-6 p-5">
-                <div class="project rounded">
-                    <img src="asset/img/rutapuuc.jpg" class="img-fluid rounded" alt="">
-                </div>
-            </div>
-            <div class="col-lg-6 p-lg-5 d-flex align-items-center justify-content-center">
-                <div class="p-5">
-                    <h4>Title text <span class="badge bg-secondary">2018</span></h4>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos velit, nam odio aspernatur atque deleniti dolorum laudantium porro ex iure deserunt id quam unde quidem natus earum sunt esse rem!
-                    </p>
-                    <a href=https://www.hotelesrutapuuc.com/"" target="_blank" class="btn btn-warning rounded-pill float-end">See more...</a>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-lg-6 p-5">
-                <div class="project rounded">
-                    <img src="asset/img/mansionmerida.jpg" class="img-fluid rounded" alt="">
-                </div>
-            </div>
-            <div class="col-lg-6 p-lg-5 d-flex align-items-center justify-content-center">
-                <div class="p-5">
-                    <h4>Title text <span class="badge bg-secondary">2018</span></h4>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos velit, nam odio aspernatur atque deleniti dolorum laudantium porro ex iure deserunt id quam unde quidem natus earum sunt esse rem!
-                    </p>
-                    <a href="https://mansionmerida.servicetour.mx/" target="_blank" class="btn btn-warning rounded-pill float-end">See more...</a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 p-5">
-                <div class="project rounded">
-                    <img src="asset/img/redtrabel.jpg" class="img-fluid rounded" alt="">
-                </div>
-            </div>
-            <div class="col-lg-6 p-lg-5 d-flex align-items-center justify-content-center">
-                <div class="p-5">
-                    <h4>Title text <span class="badge bg-secondary">2018</span></h4>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos velit, nam odio aspernatur atque deleniti dolorum laudantium porro ex iure deserunt id quam unde quidem natus earum sunt esse rem!
-                    </p>
-                    <a href="https://redtrabel.com/" target="_blank" class="btn btn-warning rounded-pill float-end">See more...</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container my-5">
-        <div class="text-center p-5">
-            <button onclick="clickemail()" class="btn btn-lg btn-warning rounded-pill px-5" style="min-height: 100px;">SEND ME A MESSAGE</button>
-        </div>
-    </div>
-    <footer class="gray pt-5 mt-5">
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-lg-3 col-12 text-center">
-                    <img src="http://via.placeholder.com/250x250" alt="">
-                </div>
-                <div class="col-lg-3 d-none d-lg-block">
-                    <h4>Title for this</h4>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatem tempora sit.
-                    </p>
-                </div>
-                <div class="col-lg-3 d-none d-lg-block">
-                    <h4>Title for this</h4>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatem tempora sit.
-                    </p>
-                </div>
-                <div class="col-lg-3 d-none d-lg-block">
-                    <h4>Title for this</h4>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptatem tempora sit.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="text-center text-orange pt-5 pb-3">
-            demo.github.com
-        </div>
+    <footer>
+        asdasd
     </footer>
-    <!--HIDDE-->
-    <div id="messagebutton" class="rounded-circle position-fixed bottom-0 end-0 m-5 d-none d-md-block mail">
-        <a id="liveToastBtn" href="javascript:;"><img src="asset/img/icons_message.svg" width="120px" class="img-fluid rounded-circle" alt=""></a>
-    </div>
-    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-        <div id="messagesuccess" class="toast align-items-center text-white bg-success border-0 mb-3" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="d-flex">
-                <div class="toast-body">
-                    Message send succefully...
-                </div>
-                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-        </div>
-        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
-            <div class="toast-header">
-                <img src="http://via.placeholder.com/25x25" class="rounded me-2" alt="...">
-                <strong class="me-auto text-warning">Send me a mail</strong>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body px-4 bg-white rounded">
-                <form id="my-form" action="https://formspree.io/f/mleakede" method="POST">
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                        <input type="email" name="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                        <textarea type="text" name="message" class="form-control form-control-lg" id="message" rows="3"></textarea>
-                    </div>
-                    <button id="my-form-button" type="submit" class="btn btn-lg btn-warning w-100 rounded-pill">Send message</button>
-                    <p id="my-form-status"></p>
-                </form>
-            </div>
-        </div>
-    </div>
-    <ul class="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="asset/js/script.js"></script>
+    <script>
+
+    </script>
 </body>
 </html>
